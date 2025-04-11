@@ -1466,7 +1466,7 @@ hr {
 
 #portfolio-wrapper .bgrid {
   flex: 1; /* Faz com que os itens ocupem o mesmo espaço */
-  max-width: 20%; /* Ajuste para garantir que 5 itens caibam lado a lado */
+  max-width: 18%; /* Ajuste para garantir que 5 itens caibam lado a lado */
 }
 /* portfolio items */
 .item .item-wrap {
