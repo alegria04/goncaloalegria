@@ -1352,7 +1352,7 @@ hr {
 	width: auto;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
-	border-color: #d44d0d;
+	border-color: white;
 	color: white;
 	white-space: nowrap;
 	text-shadow: 0 0px 5px black;
@@ -1403,6 +1403,41 @@ hr {
 	border-color: #000080;
 	cursor: default;
 }
+
+
+
+/*
+/*  n. About Section
+/* =================================================================== */
+
+#about {
+	background: #0867c7;
+	padding-top: 120px;
+	padding-bottom: 0;
+}
+
+
+#about .about-content {
+	max-width: 934px;
+}
+#about h1 {
+    color: orange;
+	font: 16px/36px "raleway-heavy", sans-serif;
+	text-transform: none;
+	padding: 0;
+	margin-bottom: 0;
+}
+#about p {
+	color: white;
+}
+#about .left {
+	padding-right: 30px;
+}
+#about .right {
+	padding-left: 30px;
+}
+
+
 
 /* 
 /* l. Portfolio Section
@@ -1504,70 +1539,6 @@ hr {
 	transform: scale(1.2);
 }
 
-/* 
-/*  m. Services Section
-/* =================================================================== */
-#services {
-	background: #ecf0f1;
-	padding-top: 120px;
-	padding-bottom: 120px;
-	text-align: center;
-}
-.service-list {
-	margin: 15px -22px 0 -22px;
-}
-.service-list .bgrid {
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding: 0 22px;
-}
-.service-list .icon-part {
-	background: #000080;
-	color: white;
-	width: 72px;
-	padding: 15px 3px;
-	font-size: 40px;
-	border-radius: 3px;
-	margin: 0 auto;
-}
-.service-list h3 {
-	font: 16px/24px "raleway-heavy", sans-serif;
-	padding: 0;
-}
-.service-list p {
-	color: #707273;
-	position: relative;
-	top: -6px;
-}
-
-
-/* 
-/*  n. About Section
-/* =================================================================== */
-
-#about {
-	background: white;
-	padding-top: 120px;
-	padding-bottom: 0;
-}
-#about .about-content {
-	max-width: 934px;
-}
-#about h3 {
-	font: 16px/36px "raleway-heavy", sans-serif;
-	text-transform: none;
-	padding: 0;
-	margin-bottom: 0;
-}
-#about p {
-	color: #707273;
-}
-#about .left {
-	padding-right: 30px;
-}
-#about .right {
-	padding-left: 30px;
-}
 
 /* Team Section
 /* -------------------------------------------------------------------- */
