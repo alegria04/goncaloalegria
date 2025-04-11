@@ -1443,7 +1443,7 @@ hr {
 /* l. Portfolio Section
 /* =================================================================== */
 #portfolio {
-	background: white;
+	background: #28016b;
 	padding-top: 120px;
 }
 .ie #portfolio .row.items {
@@ -1452,12 +1452,22 @@ hr {
 #portfolio .row.items {
 	max-width: 1200px;
 }
-
+#portfolio h2 {
+  color: white; /* Substitua por uma cor mais clara */
+}
 /* Portfolio wrapper */
 #portfolio-wrapper {
-	margin-top: 36px;
+  display: flex;
+  flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
+  justify-content: space-between; /* Espaçamento uniforme entre os itens */
+  gap:5px; /* Espaçamento entre os itens */
+  margin-bottom: 75px;
 }
 
+#portfolio-wrapper .bgrid {
+  flex: 1; /* Faz com que os itens ocupem o mesmo espaço */
+  max-width: 20%; /* Ajuste para garantir que 5 itens caibam lado a lado */
+}
 /* portfolio items */
 .item .item-wrap {
 	overflow: hidden;
@@ -1547,6 +1557,9 @@ hr {
 	margin-top: 66px;
 	padding-top: 78px;
 	padding-bottom: 120px;
+}
+#portfolio h2 {
+  color: #f0f0f0; /* Substitua por uma cor mais clara */
 }
 #team-wrapper {
 	margin: 24px -18px 0 -18px;
