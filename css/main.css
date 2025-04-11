@@ -1438,13 +1438,19 @@ hr {
 }
 
 
-
 /* 
 /* l. Portfolio Section
 /* =================================================================== */
 #portfolio {
-	background: #28016b;
-	padding-top: 120px;
+	background: #12151b url(../images/fundoSer.png) no-repeat center center fixed;
+    	-webkit-background-size: cover !important;
+    	-moz-background-size: cover !important;
+    	background-size: cover !important;
+    	padding-top: 120px;
+    	padding-bottom: 90px;
+    	width: 100%;
+    	text-align: center;
+    	position: relative;
 }
 .ie #portfolio .row.items {
 	width: 1140px;
