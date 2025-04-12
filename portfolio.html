@@ -15,9 +15,6 @@
 <div id="top"></div>
 <header id="main-header">
 	<div class="row header-inner">
-		<div class="logo">
-			<a href="index.html">My Works</a>
-		</div>
 		<nav id="nav-wrap">
 			<a class="mobile-btn" href="#nav-wrap" title="Show navigation">
 				<span class='menu-text'>Show Menu</span>
@@ -42,7 +39,7 @@
 	<div class="row">
 		<div class="twelve columns">
 			<h1>Portfolio<span>.</span></h1>
-			<p>Explore os meus projetos mais recentes.</p>
+			<p>Explore my most recent projects.</p>
 		</div>
 	</div>
 </section>
@@ -54,11 +51,10 @@
 				<h1 class="entry-title">4 in Line</h1>
 				<div class="entry-meta">
 					<ul>
-						<li>January 2024</li>
+						<li>January 2025</li>
 						<span class="meta-sep">•</span>
 						<li>
-							<a rel="skills tag" href="#">GitHub Game Link</a>,
-
+							<a rel="skills tag" href="https://github.com/alegria04/4inline.git">GitHub Link (click)</a>
 						</li>
 					</ul>
 				</div>
@@ -69,9 +65,7 @@
 				<p>This game resembles the game "Four-in-line", where you play against the computer. It has the same goal,
 					to align four balloons in a row (vertically, horizontally, or diagonally),
 					but the balloons go up instead of going down.
-				</p>There is another functionality called "explodir balao"
-					where it removes a balloon from the computer and vice versa. This is a simple game that you can play through the command line.
-
+				</p>
 				</p>
 			</div>
 			<div class="entry-content-media">
@@ -83,53 +77,6 @@
 			<div class="pagenav group">
 				<span class="prev"><a href="#" rel="prev">Previous</a></span>
 				<span class="next"><a href="#" rel="next">Next</a></span>
-			</div>
-		</div>
-	</div>
-
-	<div class="row more-projects">
-		<h1>Mais Projetos.</h1>
-		<div class="tab-whole nine columns centered">
-			<div id="portfolio-wrapper" class="bgrid-half tab-bgrid-halfgroup">
-				<div class="bgrid item">
-					<div class="item-wrap">
-						<a href="portfolio.html">
-							<img src="images/portfolio/projeto2.jpg" alt="Projeto 2">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Projeto 2</h5>
-									<p>Descrição breve do projeto 2</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="bgrid item">
-					<div class="item-wrap">
-						<a href="portfolio.html">
-							<img src="images/portfolio/projeto3.jpg" alt="Projeto 3">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Projeto 3</h5>
-									<p>Descrição breve do projeto 3</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="bgrid item">
-					<div class="item-wrap">
-						<a href="portfolio.html">
-							<img src="images/portfolio/projeto4.jpg" alt="Projeto 4">
-							<div class="overlay">
-								<div class="portfolio-item-meta">
-									<h5>Projeto 4</h5>
-									<p>Descrição breve do projeto 4</p>
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -171,5 +118,92 @@
 <script src="js/backstretch.js"></script>
 <script src="js/waypoints.js"></script>
 <script src="js/main.js"></script>
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  const projects = [
+    {
+      title: "4 in Line",
+      date: "January 2025",
+      description: "This game was developed in Kotlin as the final project for the subject (Fundamentos de Programação).",
+      details: "This game resembles the game \"Four-in-line\", where you play against the computer. It has the same goal, to align four balloons in a row (vertically, horizontally, or diagonally), but the balloons go up instead of going down. There is another functionality called \"explodir balao\" where it removes a balloon from the computer and vice versa. This is a simple game that you can play through the command line.",
+      images: ["images/portfolio/4LDemo.png", "images/portfolio/4LDemo2.png"],
+      github: "https://github.com/alegria04/4inline.git"
+    },
+    {
+      title: "Boat Radar",
+      date: "April 2025",
+      description: "This project was developed in C as a small project for the subject (Linguagens de Programação 1)",
+      details: "This project reads two different maps made of points (.) and letters resembling boats, you can locate them in the map and ask if the Boats that moved.",
+      images: ["images/portfolio/Radar.png", "images/portfolio/Radar2.png","images/portfolio/Radar3.png"],
+      github: "https://github.com/alegria04/boatRadar"
+    },
+    {
+      title: "Movies",
+      date: "March 2025",
+      description: "This is still a beta version, im waiting for new instructions to keep developing it, it was made for the subject (Algoritmia e Estrutura de Dados).",
+      details: "For now, this project crosses information from different documents, in this case about movies, actors and related.",
+      images: ["images/Fotos/ExemploMovies.png"],
+      github: "#"
+    },
+    {
+      title: "Projectile Simulator",
+      date: "December 2025",
+      description: "Descrição breve do projeto 4.",
+      details: "Detalhes adicionais sobre o projeto 4.",
+      images: ["images/Fotos/DemoTraj.png","images/Fotos/DemoTraj2.png"],
+      github: "https://github.com/alegria04/projecTraj.git"
+    },
+    {
+      title: "Projeto 5",
+      date: "March 2025",
+      description: "Descrição breve do projeto 5.",
+      details: "Detalhes adicionais sobre o projeto 5.",
+      images: ["images/portfolio/projeto5.jpg"],
+      github: "#"
+    }
+  ];
+
+  let currentProject = 0;
+
+  function updateProject(index) {
+    const project = projects[index];
+    document.querySelector(".entry-title").textContent = project.title;
+    document.querySelector(".entry-meta ul li:first-child").textContent = project.date;
+    document.querySelector(".entry-content p.lead").textContent = "Descrição do Projeto:";
+    document.querySelector(".entry-content p:nth-child(2)").textContent = project.description;
+    document.querySelector(".entry-content p:nth-child(3)").textContent = project.details;
+    document.querySelector(".entry-meta ul li a").href = project.github;
+
+    const imagesContainer = document.querySelector(".entry-content-media .post-thumb");
+    imagesContainer.innerHTML = "";
+    project.images.forEach(img => {
+      const imgElement = document.createElement("img");
+      imgElement.src = img;
+      imagesContainer.appendChild(imgElement);
+    });
+
+    document.querySelector(".prev a").style.display = index > 0 ? "inline" : "none";
+    document.querySelector(".next a").style.display = index < projects.length - 1 ? "inline" : "none";
+  }
+
+  document.querySelector(".prev a").addEventListener("click", function (e) {
+    e.preventDefault();
+    if (currentProject > 0) {
+      currentProject--;
+      updateProject(currentProject);
+    }
+  });
+
+  document.querySelector(".next a").addEventListener("click", function (e) {
+    e.preventDefault();
+    if (currentProject < projects.length - 1) {
+      currentProject++;
+      updateProject(currentProject);
+    }
+  });
+
+  updateProject(currentProject);
+});
+</script>
 </body>
 </html>
