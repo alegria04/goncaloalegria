@@ -132,8 +132,8 @@
     {
       title: "Boat Radar",
       date: "April 2025",
-      description: "This project was developed in C as a small project for the subject (Linguagens de Programação 1)",
-      details: "This project reads two different maps made of points (.) and letters resembling boats, you can locate them in the map and ask if the Boats that moved.",
+      description: "This project was developed in C as a small project for the subject (Linguagens de Programação 1).",
+      details: "This project reads two different maps made of points (.) and letters resembling boats, you can locate them in the map and ask if the Boats moved.",
       images: ["images/portfolio/Radar.png", "images/portfolio/Radar2.png","images/portfolio/Radar3.png"],
       github: "https://github.com/alegria04/boatRadar"
     },
@@ -143,22 +143,22 @@
       description: "This is still a beta version, im waiting for new instructions to keep developing it, it was made for the subject (Algoritmia e Estrutura de Dados).",
       details: "For now, this project crosses information from different documents, in this case about movies, actors and related.",
       images: ["images/Fotos/ExemploMovies.png"],
-      github: "#"
+      github: "https://github.com/alegria04/moviesBeta.git"
     },
     {
       title: "Projectile Simulator",
-      date: "December 2025",
-      description: "Descrição breve do projeto 4.",
-      details: "Detalhes adicionais sobre o projeto 4.",
+      date: "December 2024",
+      description: "This project was made as a final project for the subject (Fundamentos de Fisica).",
+      details: "This simulator accepts two different type of inputs, which you can choose and after you type all the information required it will draw a graphic with the projectile trajectory.",
       images: ["images/Fotos/DemoTraj.png","images/Fotos/DemoTraj2.png"],
       github: "https://github.com/alegria04/projecTraj.git"
     },
     {
-      title: "Projeto 5",
+      title: "Bubble Game",
       date: "March 2025",
-      description: "Descrição breve do projeto 5.",
-      details: "Detalhes adicionais sobre o projeto 5.",
-      images: ["images/portfolio/projeto5.jpg"],
+      description: "This game is still a beta version, I haven't fully developed it yet for lack of time, but I intend to finish it. This game was made in a workshop about Unity.",
+      details: "The objective of game is to hit the squares with the ball and to not let the ball fall to the infinite. It will have new features in a near future. (ps:I wasn't able to upload it to GitHub, sorry for the Inconvenience)",
+      images: ["images/Fotos/ExemploBub.png"],
       github: "#"
     }
   ];
@@ -169,7 +169,7 @@
     const project = projects[index];
     document.querySelector(".entry-title").textContent = project.title;
     document.querySelector(".entry-meta ul li:first-child").textContent = project.date;
-    document.querySelector(".entry-content p.lead").textContent = "Descrição do Projeto:";
+    document.querySelector(".entry-content p.lead").textContent = "Project Description:";
     document.querySelector(".entry-content p:nth-child(2)").textContent = project.description;
     document.querySelector(".entry-content p:nth-child(3)").textContent = project.details;
     document.querySelector(".entry-meta ul li a").href = project.github;
